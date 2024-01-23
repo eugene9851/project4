@@ -1,0 +1,10 @@
+body{
+  background: #36384D;
+  font-family: Roboto;
+  font-feature-settings: 'clig' off, 'liga' off;
+	color: #242742;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}

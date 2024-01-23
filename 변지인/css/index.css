@@ -1,0 +1,89 @@
+/* 전체적 */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* 흰 박스 */
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  width: 928px;
+  height: 641px;
+  gap: 64px;
+  padding: 24px;
+}
+/* 글자있는 왼쪽 박스 */
+.contentBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  width: 376px;
+}
+/* text부분과 email부분의 공통 */
+.text, form{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+}
+/* text부분 */
+h1{
+  width: 346px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 100%; /* 56px */
+}
+li{
+  display: flex;
+  gap: 16px;
+}
+/* Q) list-style-image가 안되는 이유
+A) ::marker로 인식하기 때문에 바뀌지 않으므로 ::before로 바꾸고 content로 주기 */
+li::before{ 
+  content: url(../assets/images/icon-list.svg);
+}
+/* email부분 */
+.emailBox{
+  display: flex;
+  flex-direction: column;
+}
+.emailBox label{
+  font-size: 12px;
+  font-weight: 700;
+}
+.emailBox input{
+  opacity: 0.5;
+  width: 326px;
+  height: 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  padding: 16px 24px;
+}
+button{
+  border: none;
+  width: 376px;
+  height: 56px;
+  border-radius: 8px;
+  background: #242742;
+  color: #fff;
+  font-weight: 700;
+}
+button:active{
+  background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+/* 그림있는 오른쪽 박스 */
+.imgBox img{
+  border-radius: 16px;
+  border: 0px solid #19182B;
+  width: 400px;
+  height: 593px;
+}
