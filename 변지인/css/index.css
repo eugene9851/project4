@@ -33,7 +33,11 @@ li::before{
   display: flex;
   flex-direction: column;
 }
-.emailBox label{
+#emailInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-size: 12px;
   font-weight: 700;
 }

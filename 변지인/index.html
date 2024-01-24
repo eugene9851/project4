@@ -39,10 +39,12 @@
         <!-- 동작하는 email부분 -->
         <form>
           <div class="emailBox">
-            <label for="email">Email address</label>
+            <div id="emailInfo">
+              <label for="email">Email address</label>
+            </div>
             <input type="text" name="email" id="email" placeholder="email@company.com">
           </div>
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button type="submit" id="emailBtn">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <!-- 그림있는 오른쪽 박스 -->
@@ -52,5 +54,6 @@
       </div>
     </div>
   </main>
+  <script src="./javascript/validation.js"></script>
 </body>
 </html>
