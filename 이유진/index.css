@@ -1,0 +1,135 @@
+/* reset */
+html, body{
+  font-size: 62.5%;
+  font-family: Roboto;
+  margin: 0;
+}
+
+/* main */
+body {
+  padding: 0;
+  @media (min-width: 576px) {
+    background-color: #36384D;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.box{
+  background-color: #FFF;
+  display: grid;
+  grid-template-areas:
+    'img'
+    'msg';
+  
+  @media (min-width: 576px) {
+    grid-template-areas:
+      'msg img';
+    border-radius: 3.6rem;
+    padding: 2.4rem;
+  }
+}
+.signUpMessage{
+  grid-area: msg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35rem;
+  margin: auto;
+  @media (min-width: 576px) {
+    padding: 0 6.4rem;
+  }
+}
+.boxTitle{
+  color: #242742;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+.description{
+  color: #242742;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  top: -2rem;
+}
+.checkPoints{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.checkPoint{
+  display: flex;
+  gap: 1rem;
+  color: #242742;
+  font-size: 1.6rem;
+  font-weight: 150%;
+  line-height: 150%
+}
+.form{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 1rem;
+}
+.form label{
+  color: #242742;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+#email{
+  padding: 1.6rem 0 1.6rem 2.4rem
+}
+.form button{
+  padding: 1.5rem;
+  background-color: #242742;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+  border-radius: 0.8rem;
+}
+.form button:hover{
+  background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+  border: none;
+}
+.form button:focus{
+  border: 0.1rem solid rgba(36, 39, 66, 1)
+}
+
+.signUpImg{
+  grid-area: img;
+  
+}
+.signImg{
+  position: relative;
+  right: 0;
+  content: url('./assets/images/illustration-sign-up-mobile.svg');
+  width: 100%;
+
+  @media (min-width: 576px) {
+    content: url('./assets/images/illustration-sign-up-desktop.svg')
+  }
+}
+
+.error{
+  color: red;
+}
+.requireValid{
+  display: flex;
+  justify-content: space-between;
+}
+.errorEmail{
+  border: 1px solid #FF6155;
+  background: rgba(255, 97, 85, 0.15);
+  color: #FF6155;
+}
