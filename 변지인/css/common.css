@@ -55,3 +55,20 @@ button:active{
   background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
   box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
 }
+
+@media (min-width: 375px) and (max-width:412px){
+  body{
+    background: #fff;
+  }
+  .box{
+    width: 375px;
+    gap: 40px;
+  }
+  h1{
+    width: 327px;
+    font-size: 40px;
+  }
+  button{
+    width: 372px;
+  }
+}

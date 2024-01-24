@@ -9,3 +9,14 @@
 span strong{
   font-weight: 700;
 }
+
+@media (min-width: 375px) and (max-width:412px){
+  .box{
+    height: 623px;
+    padding: 149px 24px 40px 24px;
+    align-items: flex-start;
+  }
+  .text{
+    margin-bottom: 263px;
+  }
+}
