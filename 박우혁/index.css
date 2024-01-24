@@ -53,6 +53,9 @@ body{
 }
 
 .subscribe_page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media(min-width:1400px) {
     max-width: 92.8rem;
     height: 64.1rem;
@@ -64,6 +67,7 @@ body{
     flex-direction: row-reverse;
     align-items: center;
     padding: 3rem 3rem;
+
 }}
 
 .mobile_img{
@@ -170,6 +174,15 @@ main{
   color: var(--grey0);
 }
 
+.email_error{
+  position: absolute;
+  top:0.3rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  color: var(--Tomato);
+  display: none;
+}
+
 .btn{
   width: 100%;
   background-color: var(--grey100);
@@ -178,5 +191,14 @@ main{
   padding: 1.5rem 1.5rem;
   border-radius: 10px;
   max-width: 37.5rem;
+  
+}
 
+.btn:hover{
+  background-color: var(--Tomato, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+
+.confirm_email{
+  font-weight:bold;
 }
