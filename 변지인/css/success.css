@@ -1,0 +1,11 @@
+/* 흰 박스 */
+.box{
+  flex-direction: column;
+  align-items: flex-start;
+  width: 376px;
+  gap: 40px;
+  padding: 64px;
+}
+span strong{
+  font-weight: 700;
+}

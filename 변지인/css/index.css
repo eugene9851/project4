@@ -1,0 +1,55 @@
+/* 공간 main부분 -> common */
+/* 흰 박스 */
+/* 흰 박스 공통부분 -> common */
+.box{
+  width: 928px;
+  height: 641px;
+  gap: 64px;
+  padding: 24px;
+}
+/* 글자있는 왼쪽 박스 */
+.contentBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  width: 376px;
+}
+/* text부분, form부분 공통-> common */
+/* text부분 */
+/* h1 공통부분 -> common */
+li{
+  display: flex;
+  gap: 16px;
+}
+/* Q) list-style-image가 안되는 이유
+A) ::marker로 인식하기 때문에 바뀌지 않으므로 ::before로 바꾸고 content로 주기 */
+li::before{ 
+  content: url(../assets/images/icon-list.svg);
+}
+/* email부분 */
+.emailBox{
+  display: flex;
+  flex-direction: column;
+}
+.emailBox label{
+  font-size: 12px;
+  font-weight: 700;
+}
+.emailBox input{
+  opacity: 0.5;
+  width: 326px;
+  height: 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  padding: 16px 24px;
+}
+/* 버튼 공통부분 -> common */
+/* 그림있는 오른쪽 박스 */
+.imgBox img{
+  border-radius: 16px;
+  border: 0px solid #19182B;
+  width: 400px;
+  height: 593px;
+}

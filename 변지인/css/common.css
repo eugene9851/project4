@@ -1,0 +1,57 @@
+body{
+  /* 전체 배경색 */
+  background: #36384D;
+  /* 서체 */
+  font-family: Roboto;
+  font-feature-settings: 'clig' off, 'liga' off;
+	color: #242742;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+/* 공간 */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* 흰 박스 */
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+}
+/* text부분 */
+h1{
+  width: 346px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 100%; /* 56px */
+}
+/* text부분과 email부분의 공통 */
+.text, form{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-direction: column;
+}
+/* 버튼 */
+button{
+  border: none;
+  width: 376px;
+  height: 56px;
+  border-radius: 8px;
+  background: #242742;
+  color: #fff;
+  font-weight: 700;
+}
+/* 버튼누를때 */
+button:active{
+  background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
+  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
