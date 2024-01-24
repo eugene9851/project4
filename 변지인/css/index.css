@@ -33,7 +33,11 @@ li::before{
   display: flex;
   flex-direction: column;
 }
-.emailBox label{
+#emailInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-size: 12px;
   font-weight: 700;
 }
@@ -47,9 +51,31 @@ li::before{
 }
 /* 버튼 공통부분 -> common */
 /* 그림있는 오른쪽 박스 */
-.imgBox img{
+.imgBox .pc{
+  display: block;
   border-radius: 16px;
   border: 0px solid #19182B;
   width: 400px;
   height: 593px;
+}
+.imgBox .mobile{
+  display: none;
+  width: 375px;
+  height: 284px;
+  border-radius: 0px 0px 16px 16px;
+  border: 0px solid #19182B;
+}
+
+@media (min-width: 375px) and (max-width:412px){
+  .box{
+    flex-direction: column-reverse;
+    height: 802px;
+    padding-bottom: 40px;
+  }
+  .imgBox .pc{
+    display: none;
+  }
+  .imgBox .mobile{
+    display: block;
+  }
 }
