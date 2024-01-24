@@ -1,18 +1,7 @@
-/* 전체적 */
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+/* 공간 main부분 -> common */
 /* 흰 박스 */
+/* 흰 박스 공통부분 -> common */
 .box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFF;
-  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 36px;
   width: 928px;
   height: 641px;
   gap: 64px;
@@ -27,20 +16,9 @@ main{
   flex-direction: column;
   width: 376px;
 }
-/* text부분과 email부분의 공통 */
-.text, form{
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-direction: column;
-}
+/* text부분, form부분 공통-> common */
 /* text부분 */
-h1{
-  width: 346px;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 100%; /* 56px */
-}
+/* h1 공통부분 -> common */
 li{
   display: flex;
   gap: 16px;
@@ -67,19 +45,7 @@ li::before{
   border: 1px solid rgba(25, 24, 43, 0.25);
   padding: 16px 24px;
 }
-button{
-  border: none;
-  width: 376px;
-  height: 56px;
-  border-radius: 8px;
-  background: #242742;
-  color: #fff;
-  font-weight: 700;
-}
-button:active{
-  background: var(--Gradient-1, linear-gradient(204deg, #FF6A3A 0%, #FF527B 100%));
-  box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
-}
+/* 버튼 공통부분 -> common */
 /* 그림있는 오른쪽 박스 */
 .imgBox img{
   border-radius: 16px;
